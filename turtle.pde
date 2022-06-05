@@ -1,7 +1,5 @@
 class Turtle {
-  float speed;
-  int speed2=6;
-  int backS=9;
+  float speed=8;
 
   void display() {
 
@@ -33,8 +31,9 @@ class Turtle {
 
   void run() {
 
-if (p.playerX>0){
-    turtleX+=speed;}
+if (turtleX-p.playerX<=300 || turtleX>700) {
+      turtleX+=speed;
+    }
 
     /*if ((width-(turtleX+turtleWidth))<=300) {
       speed=random(2, 5);
